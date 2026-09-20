@@ -1,0 +1,209 @@
+/* ============================== */
+/* global variables: colors */
+/* ============================= */
+/* (1) 主色-喜慶紅(#E60012): */
+:root {
+  /* light shade */
+    --clr-primaryA-0: #ffe5e8;
+    --clr-primaryA-1: #ffccd0;
+    --clr-primaryA-2: #ff99a1;
+    --clr-primaryA-3: #ff6673;
+    --clr-primaryA-4: #ff3344;
+    /* main color-喜慶紅 */
+    --clr-primaryA-5: #e60012;
+    /* dark shade */
+    --clr-primaryA-6: #ff0015;
+    --clr-primaryA-7: #cc0011;
+    --clr-primaryA-8: #99000d;
+    --clr-primaryA-9: #660008;
+    --clr-primaryA-10: #330004;
+    --clr-primaryA-11: #240003;
+    /* hsla for main color */
+    --clr-grey-primaryA-1: hsla(355, 100%, 50%);
+    --clr-grey-primaryA-2: hsla(355, 100%, 50%, 0.9);
+    --clr-grey-primaryA-3: hsla(355, 100%, 50%, 0.8);
+    --clr-grey-primaryA-4: hsla(355, 100%, 50%, 0.7);
+    --clr-grey-primaryA-5: hsla(355, 100%, 50%, 0.6);
+    --clr-grey-primaryA-6: hsla(355, 100%, 50%, 0.5);
+    --clr-grey-primaryA-7: hsla(355, 100%, 50%, 0.4);
+    --clr-grey-primaryA-8: hsla(355, 100%, 50%, 0.3);
+    --clr-grey-primaryA-9: hsla(355, 100%, 50%, 0.2);
+    --clr-grey-primaryA-10: hsla(355, 100%, 50%, 0.1);
+}
+/* (2) 主色-喜慶金(#FFD700): */
+:root {
+  /* light shade */
+    --clr-primaryB-0: #fffbe5;
+    --clr-primaryB-1: #fff7cc;
+    --clr-primaryB-2: #fff099;
+    --clr-primaryB-3: #ffe866;
+    --clr-primaryB-4: #ffe033;
+    /* main color-喜慶金 */
+    --clr-primaryB-5: #FFD700;
+    /* dark shade */
+    --clr-primaryB-6: #ffd900;
+    --clr-primaryB-7: #ccad00;
+    --clr-primaryB-8: #998200;
+    --clr-primaryB-9: #665700;
+    --clr-primaryB-10: #332b00;
+    --clr-primaryB-11: #241e00;
+    /* hsla for main color */
+    --clr-grey-primaryB-1: hsla(51, 100%, 50%);
+    --clr-grey-primaryB-2: hsla(51, 100%, 50%, 0.9);
+    --clr-grey-primaryB-3: hsla(51, 100%, 50%, 0.8);
+    --clr-grey-primaryB-4: hsla(51, 100%, 50%, 0.7);
+    --clr-grey-primaryB-5: hsla(51, 100%, 50%, 0.6);
+    --clr-grey-primaryB-6: hsla(51, 100%, 50%, 0.5);
+    --clr-grey-primaryB-7: hsla(51, 100%, 50%, 0.4);
+    --clr-grey-primaryB-8: hsla(51, 100%, 50%, 0.3);
+    --clr-grey-primaryB-9: hsla(51, 100%, 50%, 0.2);
+    --clr-grey-primaryB-10: hsla(51, 100%, 50%, 0.1);
+}
+/* (3) 副色-深酒紅(#7A1F2B): */
+:root {
+  /* light shade */
+    --clr-secondaryA-0: #faebed;
+    --clr-secondaryA-1: #f5d6da;
+    --clr-secondaryA-2: #eaaeb6;
+    --clr-secondaryA-3: #e08591;
+    --clr-secondaryA-4: #d55d6d;
+    /* main color-深酒紅 */
+    --clr-secondaryA-5: #7a1f2b;
+    /* dark shade */
+    --clr-secondaryA-6: #cb3448;
+    --clr-secondaryA-7: #a22a3a;
+    --clr-secondaryA-8: #7a1f2b;
+    --clr-secondaryA-9: #51151d;
+    --clr-secondaryA-10: #290a0e;
+    --clr-secondaryA-11: #1c070a;
+    /* hsla for main color */
+    --clr-grey-secondaryA-1: hsla(352, 59%, 50%);
+    --clr-grey-secondaryA-2: hsla(352, 59%, 50%, 0.9);
+    --clr-grey-secondaryA-3: hsla(352, 59%, 50%, 0.8);
+    --clr-grey-secondaryA-4: hsla(352, 59%, 50%, 0.7);
+    --clr-grey-secondaryA-5: hsla(352, 59%, 50%, 0.6);
+    --clr-grey-secondaryA-6: hsla(352, 59%, 50%, 0.5);
+    --clr-grey-secondaryA-7: hsla(352, 59%, 50%, 0.4);
+    --clr-grey-secondaryA-8: hsla(352, 59%, 50%, 0.3);
+    --clr-grey-secondaryA-9: hsla(352, 59%, 50%, 0.2);
+    --clr-grey-secondaryA-10: hsla(352, 59%, 50%, 0.1);
+}
+/* (4) 副色-奶油象牙(#FFF8E7): */
+:root {
+    /* light shade */
+    --clr-secondaryB-0: #fff7e5;
+    --clr-secondaryB-1: #fff0cc;
+    --clr-secondaryB-2: #ffe099;
+    --clr-secondaryB-3: #ffd166;
+    --clr-secondaryB-4: #ffc233;
+    /* main color-奶油象牙 */
+    --clr-secondaryB-5: #fff8e7;
+    /* dark shade */
+    --clr-secondaryB-6: #ffb300;
+    --clr-secondaryB-7: #cc8f00;
+    --clr-secondaryB-8: #996b00;
+    --clr-secondaryB-9: #664700;
+    --clr-secondaryB-10: #332400;
+    --clr-secondaryB-11: #241900;
+    /* hsla for main color */
+    --clr-grey-secondaryB-1: hsla(42, 100%, 50%);
+    --clr-grey-secondaryB-2: hsla(42, 100%, 50%, 0.9);
+    --clr-grey-secondaryB-3: hsla(42, 100%, 50%, 0.8);
+    --clr-grey-secondaryB-4: hsla(42, 100%, 50%, 0.7);
+    --clr-grey-secondaryB-5: hsla(42, 100%, 50%, 0.6);
+    --clr-grey-secondaryB-6: hsla(42, 100%, 50%, 0.5);
+    --clr-grey-secondaryB-7: hsla(42, 100%, 50%, 0.4);
+    --clr-grey-secondaryB-8: hsla(42, 100%, 50%, 0.3);
+    --clr-grey-secondaryB-9: hsla(42, 100%, 50%, 0.2);
+    --clr-grey-secondaryB-10: hsla(42, 100%, 50%, 0.1);
+}
+/* (5) 副色-柔和玫瑰粉(#FADADD): */
+:root {
+    /* light shade */
+    --clr-secondaryC-0: #fce9ea;
+    --clr-secondaryC-1: #f9d2d6;
+    --clr-secondaryC-2: #f3a5ad;
+    --clr-secondaryC-3: #ed7884;
+    --clr-secondaryC-4: #e74b5b;
+    /* main color-柔和玫瑰粉 */
+    --clr-secondaryC-5: #FADADD;
+    /* dark shade */
+    --clr-secondaryC-6: #e01f32;
+    --clr-secondaryC-7: #b41828;
+    --clr-secondaryC: #87121e;
+    --clr-secondaryC-9: #5a0c14;
+    --clr-secondaryC-10: #2d060a;
+    --clr-secondaryC-11: #1f0407;
+    /* hsla for main color */
+    --clr-grey-secondaryC-1: hsla(354, 76%, 50%);
+    --clr-grey-secondaryC-2: hsla(354, 76%, 50%, 0.9);
+    --clr-grey-secondaryC-3: hsla(354, 76%, 50%, 0.8);
+    --clr-grey-secondaryC-4: hsla(354, 76%, 50%, 0.7);
+    --clr-grey-secondaryC-5: hsla(354, 76%, 50%, 0.6);
+    --clr-grey-secondaryC-6: hsla(354, 76%, 50%, 0.5);
+    --clr-grey-secondaryC-7: hsla(354, 76%, 50%, 0.4);
+    --clr-grey-secondaryC-8: hsla(354, 76%, 50%, 0.3);
+    --clr-grey-secondaryC-9: hsla(354, 76%, 50%, 0.2);
+    --clr-grey-secondaryC-10: hsla(354, 76%, 50%, 0.1);
+}
+/* (6) 對比色-深孔雀藍(#0F4C5C): */
+:root {
+    /* light shade */
+    --clr-contrastA-0: #e9f8fb;
+    --clr-contrastA-1: #d3f1f8;
+    --clr-contrastA-2: #a7e2f1;
+    --clr-contrastA-3: #7bd4ea;
+    --clr-contrastA-4: #50c5e2;
+    /* main color-深孔雀藍 */
+    --clr-contrastA-5: #0F4C5C;
+    /* dark shade */
+    --clr-contrastA-6: #24b7db;
+    --clr-contrastA-7: #1d92af;
+    --clr-contrastA-8: #156e84;
+    --clr-contrastA-9: #0e4958;
+    --clr-contrastA-10: #07252c;
+    --clr-contrastA-11: #051a1f;
+    /* hsla for main color */
+    --clr-grey-contrastA-1: hsla(192, 72%, 50%);
+    --clr-grey-contrastA-2: hsla(192, 72%, 50%, 0.9);
+    --clr-grey-contrastA-3: hsla(192, 72%, 50%, 0.8);
+    --clr-grey-contrastA-4: hsla(192, 72%, 50%, 0.7);
+    --clr-grey-contrastA-5: hsla(192, 72%, 50%, 0.6);
+    --clr-grey-contrastA-6: hsla(192, 72%, 50%, 0.5);
+    --clr-grey-contrastA-7: hsla(192, 72%, 50%, 0.4);
+    --clr-grey-contrastA-8: hsla(192, 72%, 50%, 0.3);
+    --clr-grey-contrastA-9: hsla(192, 72%, 50%, 0.2);
+    --clr-grey-contrastA-10: hsla(192, 72%, 50%, 0.1);
+}
+/* (7) 對比色-深炭灰(#2B2B2B): */
+:root {
+      /* light shade */
+    --clr-contrastB-0: ;
+    --clr-contrastB-1: ;
+    --clr-contrastB-2: ;
+    --clr-contrastB-3: ;
+    --clr-contrastB-4: ;
+    /* main color-深炭灰 */
+    --clr-contrastB-5: #2b2b2b;
+    /* dark shade */
+    --clr-contrastB-6: ;
+    --clr-contrastB-7: ;
+    --clr-contrastB-8: ;
+    --clr-contrastB-9: ;
+    --clr-contrastB-10: ;
+    --clr-contrastB-11: ;
+    /* hsla for main color */
+    --clr-grey-contrastB-1: hsla(0, 0%, 50%);
+    --clr-grey-contrastB-2: hsla(0, 0%, 50%, 0.9);
+    --clr-grey-contrastB-3: hsla(0, 0%, 50%, 0.8);
+    --clr-grey-contrastB-4: hsla(0, 0%, 50%, 0.7);
+    --clr-grey-contrastB-5: hsla(0, 0%, 50%, 0.6);
+    --clr-grey-contrastB-6: hsla(0, 0%, 50%, 0.5);
+    --clr-grey-contrastB-7: hsla(0, 0%, 50%, 0.4);
+    --clr-grey-contrastB-8: hsla(0, 0%, 50%, 0.3);
+    --clr-grey-contrastB-9: hsla(0, 0%, 50%, 0.2);
+    --clr-grey-contrastB-10: hsla(0, 0%, 50%, 0.1);
+}
+
+
+
