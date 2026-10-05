@@ -177,21 +177,8 @@
 }
 /* (7) 對比色-深炭灰(#2B2B2B): */
 :root {
-      /* light shade */
-    --clr-contrastB-0: ;
-    --clr-contrastB-1: ;
-    --clr-contrastB-2: ;
-    --clr-contrastB-3: ;
-    --clr-contrastB-4: ;
     /* main color-深炭灰 */
     --clr-contrastB-5: #2b2b2b;
-    /* dark shade */
-    --clr-contrastB-6: ;
-    --clr-contrastB-7: ;
-    --clr-contrastB-8: ;
-    --clr-contrastB-9: ;
-    --clr-contrastB-10: ;
-    --clr-contrastB-11: ;
     /* hsla for main color */
     --clr-grey-contrastB-1: hsla(0, 0%, 50%);
     --clr-grey-contrastB-2: hsla(0, 0%, 50%, 0.9);
@@ -205,5 +192,610 @@
     --clr-grey-contrastB-10: hsla(0, 0%, 50%, 0.1);
 }
 
+/* ============================== */
+/* from fe6/burger/styles.css */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root {
+    --nav_height: 80px;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--clr-secondaryB-5);
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-contrast-11);
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.navbar {
+    background: var(--clr-neutralA-5);
+    padding: 1rem 2rem;
+    height: 80px;
+}
+
+.logo {
+        width: 50px;
+    }
+
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu-list {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar a:hover {
+    color: var(--clr-secondary-5);
+}
+/* mobile menu */
+.navbar .mobile-menu-items {
+    position: absolute;
+    top: var(--nav_height);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: var(--clr-neutralA-5);
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+}
+
+.navbar .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 100px;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+
+.navbar .mobile-menu-toggle {
+    cursor: pointer;
+}
+
+.navbar .mobile-menu-items.active {
+    transform: translateX(0);
+}
+
+.navbar .mobile-menu {
+    display: none;
+}
+
+.fa-bars {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .mobile-menu {
+        display: block;
+    }
+}
+/* ============================== */
+/* end of from fe6/burger/styles.css */
+/* ============================= */
+
+/* ============================== */
+/* indicate current location */
+/* ============================= */
+/* Active nav item */
+.navbar .main-menu-list li a.active,
+.navbar .mobile-menu-list li a.active,
+.footer .footer-menu-list li a.active {
+    /* background-color: var(--clr-contrast-11); */
+    /* color: var(--clr-neutralA-5); */
+    text-decoration: underline;
+}
+/* ============================== */
+/* end of indicate current location */
+/* ============================= */
+
+/* ============================== */
+/* handle submenu */
+/* ============================= */
+/* Submenu hidden by default */
+.navbar .submenu {
+    display: none;
+    position: absolute; /* for desktop dropdown */
+    background: var(--clr-neutralA-5);
+    padding: 0.5rem 1rem;
+    list-style: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Show submenu on hover (desktop/mouse) */
+.navbar .has-submenu:hover > .submenu {
+    display: block;
+}
+
+/* show submenu when .open is toggled (mobile/touch) */
+.navbar .has-submenu.open > .submenu {
+    display: block;
+}
+
+/* Submenu items */
+.navbar .submenu li a {
+    display: block;
+    padding: 0.5rem;
+    color: var(--clr-contrast-11);
+}
+
+.navbar .submenu li a:hover {
+    background: var(--clr-contrast-11);
+    color: var(--clr-neutralA-5);
+}
+
+/* ============================== */
+/* end of handle submenu */
+/* ============================= */
+
+/* ============================== */
+/* handle footer */
+/* ============================= */
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-menu-list {
+    display: flex;
+    /* gap: 1.5rem; */
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+@media (max-width: 768px) {
+    .footer-flex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+.footer .footer-menu-list a:hover,
+.footer .footer-menu-list a:focus {
+    color: var(--clr-contrast-11);
+    text-decoration: underline;
+}
+
+/* ============================== */
+/* end of handle footer */
+/* ============================= */
+
+/* ============================== */
+/* define a reusable grid container */
+/* ============================= */
+.body-container {
+    display: grid;
+    gap: 1rem; /* spacing between items */
+    padding: 1rem;
+}
+
+/* completely hide all <p>, <h1>, <footer>, <img> elements whenever the hamburger icon is clicked */
+.hidden-content {
+    display: none;
+}
+
+strong {
+    color: blue;
+    text-decoration: underline;
+}
+
+.company {
+    color: var(--clr-secondaryC-3);
+    font-weight: bold;
+}
+
+h1 {
+    color: var(--clr-secondary-6);
+}
+
+
+/* ============================== */
+/* end of define a reusable grid container */
+/* ============================= */
+
+/* ============================== */
+/* pattern-I */
+/* ============================= */
+.pattern-I {
+    grid-template-columns: 1fr 1fr;
+}
+
+.pattern-I .box {
+    background: var(--clr-neutralA-5);
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .pattern-I {
+        grid-template-columns: 1fr; /* stack on mobile */
+    }
+}
+
+.enneagram, .newsletter {
+    color: blue;
+    text-decoration: underline;
+}
+
+.box-e05_00 {
+    justify-self: center;
+    align-self: start;
+}
+
+.box-e05_02 {
+    justify-self: left;
+    align-self: center;
+    color: blue;
+}
+
+.pattern-I li a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.song-ci {
+    color: var(--clr-contrastA-5);
+}
+
+/* ============================== */
+/* end of pattern-I */
+/* ============================= */
+
+/* ============================== */
+/* pattern-II */
+/* ============================= */
+
+.pattern-II {
+    grid-template-columns: 1fr;
+}
+
+.pattern-II li {
+    font-size: 1rem;
+    list-style: disc;
+}
+
+.pattern-II .e12 li {
+    list-style: none;
+}
+
+.pattern-II .e14 li {
+    list-style: none;
+}
+
+.pattern-II .e15 li {
+    list-style: none;
+}
+
+.pattern-II .e16 li {
+    list-style: none;
+}
+
+.pattern-II a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.pattern-II .e16a {
+    color: red;
+}
+
+/* ============================== */
+/* end of pattern-II */
+/* ============================= */
+
+/* ============================== */
+/* pattern-III */
+/* ============================= */
+
+.pattern-III {
+    grid-template-columns: 1fr;
+}
+
+.questionnaire {
+    display: grid;
+    gap: 1rem;
+}
+
+.question p {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    font-size: 1.5rem;
+}
+
+.pattern-III .submit {
+    width: 30%;
+    color: var(--clr-secondary-6);
+    font-size: 3rem;
+    background-color: var(--clr-primary-1);
+}
+
+.pattern-III #e05_01 {
+    color: var(--clr-primary-5);
+}
+
+/* ============================== */
+/* end of pattern-III */
+/* ============================= */
+
+/* ============================== */
+/* pattern-III e08_00 */
+/* ============================= */
+
+.e08_00 {
+    --clr-primary: #b3001b;
+    --clr-primary-dark: #7a0012;
+    --clr-bg: #faf7f5;
+    --clr-text: #2b2b2b;
+    --clr-border: #d8c9c5;
+    --radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
+/* body {
+    margin: 0;
+    font-family: "Noto Sans TC", "Roboto", system-ui, sans-serif;
+    background: var(--clr-bg);
+    color: var(--clr-text);
+    line-height: 1.6;
+} */
+
+/* ---------- e08_00_MemberLogin.html ---------- */
+
+.site-header {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: var(--clr-primary);
+    color: #fff;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+}
+
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-primary {
+    background: var(--clr-primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--clr-primary-dark);
+}
+
+.btn-secondary {
+    background: #fff;
+    color: var(--clr-primary);
+    border: 1px solid var(--clr-primary);
+}
+
+.btn-secondary:hover {
+    background: #f6e8ea;
+}
+
+/* ========================================================= */
+/* Modal (uses native <dialog>)                              */
+/* ========================================================= */
+.modal {
+    border: none;
+    padding: 0;
+    background: transparent;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: visible;
+}
+
+/* The dark backdrop that covers the whole page */
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+}
+
+.modal-content {
+    width: min(480px, 92vw);
+    padding: 2rem;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.modal-small .modal-content {
+    width: min(360px, 90vw);
+    text-align: center;
+}
+
+.modal h2 {
+    margin: 0 0 1.25rem;
+    text-align: center;
+    color: var(--clr-primary);
+    font-size: 1.35rem;
+}
+
+/* ---------- Form fields ---------- */
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.field label {
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.field input {
+    padding: 0.65rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--radius);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input:focus {
+    border-color: var(--clr-primary);
+    box-shadow: 0 0 0 3px rgba(179, 0, 27, 0.15);
+}
+
+/* ---------- Actions ---------- */
+.actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.actions .btn {
+    flex: 1 1 0;
+    min-width: 100px;
+}
+
+.actions-single .btn {
+    flex: 1 1 100%;
+}
+
+.success-message {
+    margin: 0.5rem 0 1.25rem;
+    font-size: 1.05rem;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+    .modal-content {
+    padding: 1.5rem;
+    }
+
+.actions .btn {
+    flex: 1 1 100%;
+    }
+}
+
+/* ============================== */
+/* end of pattern-III e08_00 */
+/* ============================= */
+
+/* ============================== */
+/* pattern-IV */
+/* ============================= */
+
+.pattern-IV {
+    grid-template-rows: auto auto;
+}
+
+.pattern-IV .upper {
+    grid-column: 1 / -1;
+}
+
+.pattern-IV .lower {
+    display: grid;
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-auto-rows: auto; */
+    gap: 1rem;
+}
+
+.pattern-IV .row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+/* @media (max-width: 768px) {
+    .pattern-IV .lower {
+        grid-template-columns: 1fr;
+    }
+} */
+
+@media (max-width: 768px) {
+    .pattern-IV .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pattern-IV .e11 {
+    color: var(--clr-secondaryC-7);
+    text-decoration: underline;
+}
+
+.trip {
+    color: var(--clr-contrastA-5);
+    text-decoration: underline;
+}
+
+/* ============================== */
+/* end of pattern-IV */
+/* ============================= */
 
