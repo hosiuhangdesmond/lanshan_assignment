@@ -799,3 +799,6 @@ h1 {
 /* end of pattern-IV */
 /* ============================= */
 
+.special {
+    color: green;
+}
